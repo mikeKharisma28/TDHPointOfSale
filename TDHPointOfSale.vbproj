@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4EB8D53D-4C57-48E4-932B-C2602F7BFD9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TDHPointOfSale.My.MyApplication</StartupObject>
+    <RootNamespace>TDHPointOfSale</RootNamespace>
+    <AssemblyName>TDH Point Of Sale</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\Dokumen\PKL\Installer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>TDH Point Of Sale</ProductName>
+    <PublisherName>Michael Laksa Kharisma</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.1.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TDH Point Of Sale.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TDH Point Of Sale.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>27CA0714F27BC0C0565519F781FDB613C2AF42BB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TDHPointOfSale_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_tdh.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.EMFServerMessageFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine.Migration" />
+    <Import Include="CrystalDecisions.CrystalReports.EPFPageObjectFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.ETFTotallerTreeFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.SCREventLog" />
+    <Import Include="CrystalDecisions.CrystalReports.TSLV" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.vb" />
+    <Compile Include="Form_Order.Designer.vb">
+      <DependentUpon>Form_Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Settings.Designer.vb">
+      <DependentUpon>Form_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Item.designer.vb">
+      <DependentUpon>Master_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Help.designer.vb">
+      <DependentUpon>Form_Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Laporan.designer.vb">
+      <DependentUpon>Form_Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.designer.vb">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Master.designer.vb">
+      <DependentUpon>Form_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphicOverall.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GraphicOverall.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="GraphicPerItem.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GraphicPerItem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Help_About.designer.vb">
+      <DependentUpon>Help_About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help_About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help_Laporan.designer.vb">
+      <DependentUpon>Help_Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help_Laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help_Master.designer.vb">
+      <DependentUpon>Help_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help_Order.designer.vb">
+      <DependentUpon>Help_Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help_Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Graphic.designer.vb">
+      <DependentUpon>Laporan_Graphic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Graphic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Graphic_Overall.designer.vb">
+      <DependentUpon>Laporan_Graphic_Overall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Graphic_Overall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Graphic_PerItem.designer.vb">
+      <DependentUpon>Laporan_Graphic_PerItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Graphic_PerItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Text.designer.vb">
+      <DependentUpon>Laporan_Text.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Text.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Text_History.designer.vb">
+      <DependentUpon>Laporan_Text_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Text_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Text_PerHari.designer.vb">
+      <DependentUpon>Laporan_Text_PerHari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan_Text_PerHari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libraries.vb" />
+    <Compile Include="Master_Add.designer.vb">
+      <DependentUpon>Master_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_Edit.designer.vb">
+      <DependentUpon>Master_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_EditDataMeja.designer.vb">
+      <DependentUpon>Master_EditDataMeja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master_EditDataMeja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_EditKategori.designer.vb">
+      <DependentUpon>Master_EditKategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master_EditKategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Utama_Kasir.designer.vb">
+      <DependentUpon>Menu_Utama_Kasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Utama_Kasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Order_TahanOrderList.designer.vb">
+      <DependentUpon>Order_TahanOrderList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Order_TahanOrderList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintNota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintNota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="PrintNotaBuatPajak.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintNotaBuatPajak.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Setting_ChangeCode.Designer.vb">
+      <DependentUpon>Setting_ChangeCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_ChangeCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextPerHari.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextPerHari.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Order.resx">
+      <DependentUpon>Form_Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Settings.resx">
+      <DependentUpon>Form_Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Item.resx">
+      <DependentUpon>Master_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Help.resx">
+      <DependentUpon>Form_Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Laporan.resx">
+      <DependentUpon>Form_Laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Master.resx">
+      <DependentUpon>Form_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicOverall.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GraphicOverall.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphicPerItem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GraphicPerItem.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_About.resx">
+      <DependentUpon>Help_About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_Laporan.resx">
+      <DependentUpon>Help_Laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_Master.resx">
+      <DependentUpon>Help_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help_Order.resx">
+      <DependentUpon>Help_Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Graphic.resx">
+      <DependentUpon>Laporan_Graphic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Graphic_Overall.resx">
+      <DependentUpon>Laporan_Graphic_Overall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Graphic_PerItem.resx">
+      <DependentUpon>Laporan_Graphic_PerItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Text.resx">
+      <DependentUpon>Laporan_Text.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Text_History.resx">
+      <DependentUpon>Laporan_Text_History.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Text_PerHari.resx">
+      <DependentUpon>Laporan_Text_PerHari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Add.resx">
+      <DependentUpon>Master_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_Edit.resx">
+      <DependentUpon>Master_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_EditDataMeja.resx">
+      <DependentUpon>Master_EditDataMeja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_EditKategori.resx">
+      <DependentUpon>Master_EditKategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Utama_Kasir.resx">
+      <DependentUpon>Menu_Utama_Kasir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_TahanOrderList.resx">
+      <DependentUpon>Order_TahanOrderList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintNota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintNota.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintNotaBuatPajak.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintNotaBuatPajak.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting_ChangeCode.resx">
+      <DependentUpon>Setting_ChangeCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextPerHari.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TextPerHari.vb</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TDHPointOfSale_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Auto</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TDHDatabase.accdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>DataFile</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_tdh.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TDHDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
